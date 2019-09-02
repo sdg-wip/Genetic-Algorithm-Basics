@@ -12,11 +12,15 @@ If we select only the fit chromosomes to produce off-springs, that would lead to
 
 4. ***Crossover:*** Crossover is the one of the significant phase in a genetic algorithm. For each pair of parents to be mated, a crossover point is chosen at random from within the genes. Offspring are created by exchanging the genes of parents among themselves until the crossover point is reached.
 
-5. ***Mutation:*** a random tweak in the chromosome that increases diversity among the next generation is called mutation. Offsprings from the same parents doesn't become identical for this mutation.
+5. ***Mutation:*** a random tweak in the chromosome that increases diversity among the next generation is called mutation. Offsprings from the same parents doesn't become identical due to this mutation process.
 
 The off-springs are again validated using the fitness function, and if considered fit then will replace the less fit chromosomes from the population.
 
 The algorithm terminates if the population converges that means it doesn't produce off-springs which are significantly different from the previous generation. Then it is said that the genetic algorithm has provided a set of solutions to our problem.
+
+GA does not require any derivative information to reach the optimal solution and hence useful for many optimization problem where derivative information can't be calculated. It optimizes both continuous and discrete functions and also multi-objective problems and provides set of solutions instead of any single solution. It is fast as it incorporates parralllel computing capabilities. This is very useful optimization technique for large search base with large number of parameters.
+
+The main shortcoming of this technique is that there are no guarantees on the optimality of the solution as the the process is stochastic.
 
 
   
